@@ -17,8 +17,11 @@ gnome_extensions=(
   disable-workspace-switcher@jbradaric.me
   eepresetselector@ulville.github.io
 )
-# for software in ${softwares[@]}; do
-for extension in ${gnome_extensions[@]}; do
-  echo "Trying to install gnome-extension '"$software"'"
-  gnome-extensions install $extension
-done
+
+# TODO: make this possible
+# is possible with pamac installation with prefix `gnome-shell-extension-<EXTENSON-NAME>`
+# https://askubuntu.com/questions/1073471/installation-of-gnome-shell-extensions-does-not-ask-for-root-password
+# for extension in ${gnome_extensions[@]}; do
+#   echo "Trying to install gnome-extension '"$extension"'"
+#   gnome-extensions install $extension
+# done
