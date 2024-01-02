@@ -17,7 +17,7 @@ softwares=(
 
 for software in ${softwares[@]}; do
   echo "Trying to install '"$software"' with yay"
-  yay -S -y --noconfirm $software
+  yay -S -y --needed --noconfirm $software
 done
 
 # clean up all unwanted dependencies
