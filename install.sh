@@ -4,4 +4,4 @@
 pamac update --no-confirm
 
 # develop settings
-sh ./develop/main.sh
+cd ./develop && sh main.sh && cd -
