@@ -5,7 +5,6 @@ contexts=(
   develop
   # softwares
   softwares
-  gnome-extensions
 )
 
 # first update installed packages without confirmation (yes/no messages)

@@ -1,7 +1,7 @@
 # Hello, Vitor!
 You got tired of being a distro hooper? A good son to the house returns.
 
-To install the necessary packages and extensions, simply run `sh install.sh`. If you want to use gnome-extensions, you will need to install them manually. The `/gnome-extensions/main.sh` folder contains all extension names.
+To install the necessary packages and extensions, simply run `sh install.sh`. If you want to use gnome-extensions, you will need to install them manually. The `/manually/gnome-extensions/main.sh` folder contains all extension names.
 
 Always check your gnome shell version compatibility with packages and extensions. My version during the writing of this markdown was `45.2`.
 
