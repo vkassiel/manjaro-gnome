@@ -21,4 +21,4 @@ for software in ${softwares[@]}; do
 done
 
 # clean up all unwanted dependencies
-yay -Yc
+yay -Yc -y --noconfirm
