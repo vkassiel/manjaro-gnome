@@ -13,7 +13,7 @@ pamac install docker --no-confirm
 # install vscode
 git clone https://aur.archlinux.org/visual-studio-code-bin.git vscode
 cd ./vscode
-makepkg -si
+makepkg -si --noconfirm
 cd ..
 rm -rf ./vscode
 
