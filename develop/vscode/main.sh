@@ -7,7 +7,7 @@ cd ..
 rm -rf ./visual-studio-code-bin
 
 # move settings to vscode directory
-mv settings.json ~/.config/Code/User
+cp ./settings.json ~/.config/Code/User
 
 extensions=(
   7dp.webstorm-darcula-darker-theme
