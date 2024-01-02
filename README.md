@@ -1,5 +1,4 @@
-# Hello, Vitor!
-You got tired of being a distro hooper? A good son to the house returns.
+# Hello!
 
 To install the necessary packages and extensions, simply run `sh install.sh`. If you want to use gnome-extensions, you will need to install them manually. The `/manually/gnome-extensions/main.sh` folder contains all extension names.
 
