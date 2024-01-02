@@ -4,6 +4,8 @@ To install the necessary packages and extensions, simply run `sh install.sh`. If
 
 Always check your gnome shell version compatibility with packages and extensions. My version during the writing of this markdown was `45.2`.
 
+To setup git, change variables inside file `/develop/git/main.sh`.
+
 ### Development
 - [Arch base development packages](https://archlinux.org/packages/core/any/base-devel/)
 - [Visual Studio Code](https://aur.archlinux.org/visual-studio-code-bin.git)

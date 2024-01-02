@@ -12,6 +12,7 @@ GIT_PERSONAL_EMAIL="YOUR_GIT_PERSONAL_EMAIL"
 GIT_PERSONAL_PROJECTS_WORK_DIR="YOUR_GIT_PERSONAL_PROJECTS_DIRECTORY_NAME"
 GIT_DEFAULT_HUB="YOUR_GIT_DEFAULT_HUB" # i.e.: github, gitlab etc.
 
+# custom git name/email by folder
 mkdir ~/$GIT_PERSONAL_PROJECTS_WORK_DIR
 
 echo '[user]
@@ -20,8 +21,8 @@ echo '[user]
 echo 'OK'
 
 echo '[user]
-        name = Vitor Almeida
-        email = vitor.almeida@planium.io
+        name = '"$GIT_PERSONAL_NAME"'
+        email = '"$GIT_PERSONAL_EMAIL"'
 
 [includeIf "gitdir:~/'$GIT_PERSONAL_PROJECTS_WORK_DIR'/"]
         path = .gitconfig-'$GIT_DEFAULT_HUB'
