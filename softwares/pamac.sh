@@ -27,5 +27,5 @@ softwares_to_build=(
 
 for software in ${softwares_to_build[@]}; do
   echo "Trying to build '"$software"'"
-  pamac install $software --no-confirm
+  pamac build $software --no-confirm
 done
