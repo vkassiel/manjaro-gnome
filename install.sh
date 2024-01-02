@@ -1,7 +1,17 @@
 #!/bin/bash
 
+contexts=(
+  # develop settings
+  develop
+  # softwares
+  softwares
+)
+
 # first update installed packages without confirmation (yes/no messages)
 pamac update --no-confirm
 
-# develop settings
-cd ./develop && sh main.sh && cd -
+for folder in ${contexts[@]}; do
+  cd ./$folder
+  sh main.sh
+  cd -
+done
