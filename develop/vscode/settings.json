@@ -1,0 +1,218 @@
+{
+  "editor.rulers": [
+    {
+      "column": 120,
+      "color": "#424242cc"
+    }
+  ],
+  "editor.tokenColorCustomizations": {
+    "[dark-plus-syntax]": {
+      "textMateRules": [
+        {
+          "scope": "punctuation.terminator.statement.ts",
+          "settings": {
+            "foreground": "#CCCCCC"
+          }
+        },
+        {
+          "scope": "punctuation.accessor.ts",
+          "settings": {
+            "foreground": "#CCCCCC"
+          }
+        },
+        {
+          "scope": "keyword.operator.assignment.ts",
+          "settings": {
+            "foreground": "#CCCCCC"
+          }
+        }
+      ]
+    },
+    "[Default Dark Modern]": {
+      "editorInlayHint.background": "#4d4d4d99",
+      "editorInlayHint.foreground": "#ffffffcc",
+      "editorInlayHint.parameterBackground": "#4d4d4d99",
+      "editorInlayHint.parameterForeground": "#ffffffcc",
+      "editorInlayHint.typeBackground": "#4d4d4d99",
+      "editorInlayHint.typeForeground": "#ffffffcc",
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#e67a7a",
+    "editorError.border": "#181818",
+    "[Jetbrains Fleet]": {
+      "editorWhitespace.foreground": "#424242cc",
+      "editorIndentGuide.activeBackground1": "#606060cc",
+      "editorIndentGuide.background1": "#363636cc",
+      "editorIndentGuide.background2": "#424242cc",
+      "editorIndentGuide.background3": "#424242cc"
+    },
+    "[Default Dark Modern]": {
+      "editorInlayHint.foreground": "#868686f0",
+      "editorInlayHint.background": "#18181800",
+      // Overrides for specific kinds of inlay hints
+      // "editorInlayHint.typeForeground": "#486148f0",
+      // "editorInlayHint.parameterForeground": "#486148f0",
+    },
+    "[Dracula Pro Edition]": {
+      "editorInlayHint.background": "#191a21",
+    },
+    "[GitHub Dark Default]": {
+      "editorWhitespace.foreground": "#2a2a2a"
+    },
+    "[Rosé Pine (no italics)]": {
+      "editorWhitespace.foreground": "#382e3b",
+      "editorInlayHint.foreground": "#201424",
+      "editorInlayHint.background": "#201424",
+    }
+  },
+  "eslint.validate": [
+    "javascript"
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.history": true,
+    ".history": false,
+  },
+  "symbols.hidesExplorerArrows": false,
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+  "workbench.productIconTheme": "fluent-icons",
+  // "workbench.tree.indent": 20,
+  // "workbench.tree.indent": 15,
+  // "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": 1,
+  // "window.zoomLevel": 1.5,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "toggle",
+  "window.dialogStyle": "custom",
+  "window.commandCenter": true,
+  "window.title": "${folderPath}",
+
+  "editor.lineHeight": 22,
+  // "editor.letterSpacing": 0.2,
+
+  /** JetBrains */
+  // "editor.fontFamily": "\"JetBrains Mono\", monospace",
+  // "editor.fontWeight": "476",
+  // "terminal.integrated.fontSize": 12.5,
+  // "editor.fontSize": 11.1,
+  // "editor.fontLigatures": true,
+
+  /** Berkeley Mono */
+  "editor.fontFamily": "\"Berkeley Mono\", monospace",
+  "terminal.integrated.fontSize": 12.5,
+  // "editor.fontSize": 11.5,
+  // "editor.fontSize": 12,
+  "editor.fontSize": 11.7,
+  // "editor.fontWeight": "bold",
+  // "editor.fontSize": 11.5,
+  "editor.fontLigatures": true,
+  // "editor.letterSpacing": -0.5,
+
+  /** Geist Mono */
+  // "editor.fontFamily": "\"Geist Mono\", monospace",
+  // "editor.fontWeight": "476",
+  // "editor.fontSize": 11.5,
+
+  /** Fira Code */
+  // "editor.fontFamily": "Fira Code, monospace",
+  // "editor.fontWeight": "476",
+  // "editor.fontSize": 11.1,
+  // "editor.fontLigatures": true,
+  // "editor.letterSpacing": -0.5,
+
+  // "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace"
+  // "editor.fontSize": 14,
+  // "editor.fontWeight": "normal",
+  // "editor.fontFamily": "Liga Menlo, monospace",
+
+  // "editor.fontSize": 11,
+
+  // "editor.fontSize": 11.5,
+  // "editor.fontSize": 11.5,
+  // "editor.fontSize": 12,
+  // "editor.fontSize": 12.5,
+  // "editor.fontSize": 13,
+  // "terminal.integrated.fontSize": 14,
+
+  // "terminal.integrated.lineHeight": 1.3,
+  "terminal.explorerKind": "external",
+  // "editor.fontWeight": "510",
+  // "editor.fontWeight": "600",
+  // "editor.lineHeight": 26,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "editor.wordWrap": "on",
+  // "workbench.iconTheme": "material-icon-theme",
+  "editor.minimap.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "totalTypeScript.hiddenTips": [
+    "type-alias-declaration",
+    "ts-object-type",
+    "literal-type",
+    "basic-types",
+    "union-type",
+    "passing-generics-to-types"
+  ],
+  "totalTypeScript.hideAllTips": true,
+  "totalTypeScript.hideBasicTips": true,
+  "terminal.integrated.scrollback": 1000000,
+  "workbench.iconTheme": "symbols",
+  "sonarlint.rules": {
+    "Web:TableWithoutCaptionCheck": {
+      "level": "off"
+    },
+    "Web:TableHeaderHasIdOrScopeCheck": {
+      "level": "off"
+    }
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.renderWhitespace": "all",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.activityBar.location": "top",
+  "editor.multiCursorLimit": 100000,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "workbench.colorTheme": "Dracula",
+}

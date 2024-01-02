@@ -10,12 +10,8 @@ sh git.sh
 # install docker engine
 pamac install docker --no-confirm
 
-# install vscode
-git clone https://aur.archlinux.org/visual-studio-code-bin.git vscode
-cd ./vscode
-makepkg -si --noconfirm
-cd ..
-rm -rf ./vscode
+# install vscode and set settings and extensions
+sh ./vscode/main.sh
 
 # install dbeaver
 pamac install dbeaver --no-confirm
