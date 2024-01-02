@@ -9,6 +9,7 @@ Always check your gnome shell version compatibility with packages and extensions
 - [Arch base development packages](https://archlinux.org/packages/core/any/base-devel/)
 - [Visual Studio Code](https://aur.archlinux.org/visual-studio-code-bin.git)
 - Git package and configuration
+  - If you stay on PLN, you will need to move your ssh keys manually to ~/.ssh.
 - Docker Engine
 - DBeaver
 - Filezilla
