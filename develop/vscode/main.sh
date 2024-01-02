@@ -1,10 +1,13 @@
 #!/bin/bash
 
-git clone https://aur.archlinux.org/visual-studio-code-bin.git
-cd ./visual-studio-code-bin
-makepkg -si --noconfirm
-cd ..
-rm -rf ./visual-studio-code-bin
+vscode_default_directory="/opt/visual-studio-code"
+if [ ! -d "$vscode_default_directory" ]; then
+  git clone https://aur.archlinux.org/visual-studio-code-bin.git
+  cd ./visual-studio-code-bin
+  makepkg -si --noconfirm
+  cd ..
+  rm -rf ./visual-studio-code-bin
+fi
 
 # move settings to vscode directory
 cp ./settings.json ~/.config/Code/User
