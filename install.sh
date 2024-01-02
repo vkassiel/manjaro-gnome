@@ -7,6 +7,9 @@ contexts=(
   softwares
 )
 
+# update mirrors and packages with pacman
+sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
+
 # first update installed packages without confirmation (yes/no messages)
 pamac update --no-confirm
 
