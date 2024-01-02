@@ -5,7 +5,7 @@
 pamac install base-devel --no-confirm
 
 # git
-sh git.sh
+sh ./git/main.sh
 
 # install docker engine
 pamac install docker --no-confirm
