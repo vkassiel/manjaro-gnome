@@ -1,49 +1,30 @@
 #!/bin/bash
 
 # install git without confirmation screen (yes/no)
-echo 'Installing git...'
 pamac install git --no-confirm
-echo 'OK'
 
 # save credentials data indefinitely
 git config --global credential.helper store
 
 # variables
-export GIT_PERSONAL_NAME="Vitor Almeida"
-export GIT_PERSONAL_EMAIL="kassielalmeida@gmail.com"
-export GIT_PERSONAL_PROJECTS_WORK_DIR="dev"
-export GIT_DEFAULT_HUB="github"
-
-export YOUR_COMPANY_NAME="planium"
-export GIT_PROFESSIONAL_NAME="Vitor Almeida"
-export GIT_PROFESSIONAL_EMAIL="vitor.almeida@planium.io"
-export GIT_PROFESSIONAL_PROJECTS_WORK_DIR="${YOUR_COMPANY_NAME}"
+GIT_PERSONAL_NAME="YOUR_GIT_PERSONAL_NAME"
+GIT_PERSONAL_EMAIL="YOUR_GIT_PERSONAL_EMAIL"
+GIT_PERSONAL_PROJECTS_WORK_DIR="YOUR_GIT_PERSONAL_PROJECTS_DIRECTORY_NAME"
+GIT_DEFAULT_HUB="YOUR_GIT_DEFAULT_HUB" # i.e.: github, gitlab etc.
 
 mkdir ~/$GIT_PERSONAL_PROJECTS_WORK_DIR
-mkdir ~/$GIT_PROFESSIONAL_PROJECTS_WORK_DIR
 
-echo 'Creating your personal git config file...'
 echo '[user]
     name = "'${GIT_PERSONAL_NAME}'"
     email = '"${GIT_PERSONAL_EMAIL}"'' > ~/.gitconfig-${GIT_DEFAULT_HUB}
 echo 'OK'
 
-echo 'Creating your professional git config file...'
-echo '[user]
-    email = '"${GIT_PERSONAL_EMAIL}"'' > ~/.gitconfig-${YOUR_COMPANY_NAME}
-echo 'OK'
-
-echo 'Creating your custom git config file...'
 echo '[user]
         name = Vitor Almeida
         email = vitor.almeida@planium.io
 
 [includeIf "gitdir:~/'$GIT_PERSONAL_PROJECTS_WORK_DIR'/"]
         path = .gitconfig-'$GIT_DEFAULT_HUB'
-[includeIf "gitdir:~/'$GIT_PROFESSIONAL_PROJECTS_WORK_DIR'/"]
-        path = .gitconfig-'$YOUR_COMPANY_NAME'
-[includeIf "gitdir:~/var/www/html/scarlett/"]
-        path = .gitconfig-'$YOUR_COMPANY_NAME'
 
 [credential]
         helper = store
@@ -61,4 +42,3 @@ echo '[user]
         clean = git-lfs clean -- %f
 [init]
         defaultBranch = main' > ~/.gitconfig
-echo 'OK'
