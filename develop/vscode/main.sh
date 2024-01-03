@@ -29,6 +29,7 @@ extensions=(
   cweijan.onedark-modern
   dbaeumer.vscode-eslint
   dracula-theme.theme-dracula
+  drcika.apc-extension
   dunstontc.dark-plus-syntax
   eamodio.gitlens
   EdwinSulaiman.jetbrains-rider-dark-theme
