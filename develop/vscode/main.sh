@@ -10,7 +10,7 @@ if [ ! -d "$vscode_default_directory" ]; then
 fi
 
 # move settings to vscode directory
-cp ./settings.json ~/.config/Code/User
+cp settings.json ~/.config/Code/User
 
 extensions=(
   7dp.webstorm-darcula-darker-theme
