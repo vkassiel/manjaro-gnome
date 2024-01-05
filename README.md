@@ -4,7 +4,9 @@ To install the necessary packages and extensions, simply run `sh install.sh`. If
 
 Always check your gnome shell version compatibility with packages and extensions. My version during the writing of this markdown was `45.2`.
 
-To setup git, change variables inside file `/develop/git/main.sh`.
+> IMPORTANT:
+> - To setup git, change variables inside file `/develop/git/main.sh`.
+> - Add your `sudo` password on global variable `SUDO_PASSWORD` inside `install.sh` to move icons to folder without errors.
 
 ### Development
 - [Arch base development packages](https://archlinux.org/packages/core/any/base-devel/)

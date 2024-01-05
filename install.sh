@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# you need to set your password to run script of icon theme on '/appearance/icons/main.sh'
+export SUDO_PASSWORD="YOUR_SUDO_PASSWORD"
+
 # exec script only if computer has internet connection
 if ! ping -c 1 8.8.8.8 -q &> /dev/null; then
   echo -e "Your computer does not have an internet connection. Please verify your network and try again later."
