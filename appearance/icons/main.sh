@@ -8,4 +8,4 @@ cd ..
 rm -rf reversal-icon-theme
 
 # set icon theme
-dconf write /org/gnome/desktop/interface/icon-theme "'Reversal-black'"
+dconf write /org/gnome/desktop/interface/icon-theme "'Reversal-black-dark'"
