@@ -11,6 +11,7 @@ contexts=(
   develop
   # softwares
   softwares
+  appearance
 )
 
 # update mirrors and packages with pacman
