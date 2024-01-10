@@ -78,6 +78,7 @@
       "mode": "auto"
     }
   ],
+
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -87,6 +88,10 @@
     "**/Thumbs.db": true,
     "**/.history": true,
     ".history": false,
+    ".vscode": true,
+    "**/**/keys": true,
+    "**/**/dev": true,
+    "**/node_modules": true,
   },
   "symbols.hidesExplorerArrows": false,
   "editor.indentSize": "tabSize",
@@ -94,13 +99,12 @@
   "workbench.productIconTheme": "fluent-icons",
   // "workbench.tree.indent": 20,
   // "workbench.tree.indent": 15,
-  // "workbench.iconTheme": "vscode-icons",
+
   "window.zoomLevel": 1,
   // "window.zoomLevel": 1.5,
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
   "window.dialogStyle": "custom",
-  "window.commandCenter": true,
   "window.title": "${folderPath}",
 
   "editor.lineHeight": 22,
@@ -185,7 +189,6 @@
     "!Split sequence"
   ],
   "editor.wordWrap": "on",
-  // "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
   "totalTypeScript.hiddenTips": [
@@ -200,20 +203,55 @@
   "totalTypeScript.hideBasicTips": true,
   "terminal.integrated.scrollback": 1000000,
   "workbench.iconTheme": "symbols",
-  "sonarlint.rules": {
-    "Web:TableWithoutCaptionCheck": {
-      "level": "off"
-    },
-    "Web:TableHeaderHasIdOrScopeCheck": {
-      "level": "off"
-    }
-  },
   "vsicons.dontShowNewVersionMessage": true,
   "editor.renderWhitespace": "all",
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.multiCursorLimit": 100000,
   "nxConsole.showNodeVersionOnStartup": false,
-  "workbench.colorTheme": "Rosé Pine (no italics)",
+
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "editor.semanticHighlighting.enabled": false,
+  "breadcrumbs.enabled": false,
+
+  "window.commandCenter": false,
+  "explorer.sortOrder": "foldersNestsFiles",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .eslint*, .lintstagedrc.json, commitlint*, .prettier*, json-file*, nest-cli*",
+    "syncme.sh": "compile*, sdev*, sync*",
+    ".env": ".env*",
+    "jest.config.mjs": "jest*"
+  },
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "symbols.folders.associations": {
+    "frontend": "folder-layout",
+    "svc": "folder-red-code",
+    "custom": "folder-red-code",
+    "web": "folder-layout",
+    "keys": "folder-utils",
+    "nodejs": "folder-green",
+    "credentials": "folder-config",
+    "authentication-service": "folder-gray-code",
+    "services": "folder-app",
+    "mariadb-dump": "folder-database",
+    "php": "folder-purple-code",
+    "projects": "folder-context"
+  },
+  "workbench.sideBar.location": "right",
+
+  // "symbols.files.associations": {
+  //   "web/angular/**/*.ts": "angular",
+  //   "**/svc/node/**/*.ts": "nest"
+  // }
+
+  /** APC - Customization UI **/
   "apc.activityBar": {
     "position": "bottom",
     "hideSettings": true,
@@ -229,7 +267,7 @@
     "fontSize": 12
   },
   "apc.statusBar": {
-    "fontSize": 11
+    // "fontSize": 11
   },
   "apc.listRow": {
     "lists": [
@@ -238,8 +276,8 @@
        "results",
        "open-editors"
     ],
-    "height": 22,
-    "fontSize": 12,
+    "height": 22
+    // "fontSize": 12,
     // "lists": [
     //   "customview-tree",
     //   "results",
@@ -252,5 +290,13 @@
     //   "tree"
     // ]
   },
-  "apc.font.family": "Berkeley Mono",
+
+  "apc.stylesheet": {
+    ".editor-actions": "display: none",
+    ".pane-body": "padding: 0 8px",
+    ".pane-header": "padding: 0 8px",
+    // ".window-controls-container.primary": "display: flex; gap: 1rem;",
+    // ".window-icon": "background-color: #444444",
+    ".monaco-workbench .part.titlebar .window-controls-container > .window-icon": "font-size: 14px !important;",
+  },
 }
